@@ -1,6 +1,6 @@
-import talentforgeImg from "@/assets/projects/talentforge.png.asset.json";
-import bitenowImg from "@/assets/projects/bitenow.png.asset.json";
-import mentalHealthImg from "@/assets/projects/mental-health.png.asset.json";
+import talentforgeImg from "@/assets/projects/project-talentforge.png";
+import bitenowImg from "@/assets/projects/project-bitenow.png";
+import mentalHealthImg from "@/assets/projects/project-mental-health.png";
 
 export interface Project {
   slug: string;
@@ -23,7 +23,7 @@ export const projects: Project[] = [
     period: "Jun 2026 – Jul 2026",
     overview:
       "TalentForge is a desktop application that helps students prepare for campus placements in one place — coding practice, resume analysis, mock interviews and progress analytics, all wrapped in a modern, animated Java Swing interface.",
-    image: talentforgeImg.url,
+    image: talentforgeImg,
     imageAlt: "TalentForge login screen showing the AI-powered placement platform welcome page",
     stack: ["Java", "Swing", "SQLite", "Apache PDFBox", "FlatLaf"],
     built: [
@@ -62,7 +62,7 @@ export const projects: Project[] = [
     period: "May 2026 – Jun 2026",
     overview:
       "BiteNow is a full-stack food delivery platform with three live roles — Customer, Rider and Admin. It supports real-time order tracking, in-app chat and push notifications, from placing an order to doorstep delivery.",
-    image: bitenowImg.url,
+    image: bitenowImg,
     imageAlt: "BiteNow food delivery homepage with hero banner, kitchen stats and category filters",
     stack: ["React 19", "Vite 7", "Tailwind CSS v4", "Supabase", "Realtime"],
     built: [
@@ -101,7 +101,7 @@ export const projects: Project[] = [
     period: "Feb 2026 – Mar 2026",
     overview:
       "An exploratory data analysis of mental health survey data — stress, sleep, depression, anxiety, burnout and lifestyle habits — turning raw responses into clear, visual insights about what affects mental well-being.",
-    image: mentalHealthImg.url,
+    image: mentalHealthImg,
     imageAlt: "Mental health data analysis dashboard with twelve charts including distributions, scatter plots and a correlation heatmap",
     stack: ["Python", "NumPy", "Pandas", "Seaborn", "Matplotlib"],
     built: [

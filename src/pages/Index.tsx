@@ -6,13 +6,13 @@ import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { FadeUp, HeroContent, HeroItem, SectionHeader, StaggerContainer, StaggerItem } from "@/components/ui/scroll-animation";
 import SkillChip from "@/components/SkillChip";
 import heroBg from "@/assets/hero-bg.jpg";
-import deloitteCert from "@/assets/certs/deloitte.png.asset.json";
-import oracleAiCert from "@/assets/certs/oracle-ai.png.asset.json";
-import oracleDataCert from "@/assets/certs/oracle-data.png.asset.json";
-import powerbiCert from "@/assets/certs/powerbi.png.asset.json";
-import infosysCert from "@/assets/certs/infosys-dsa.png.asset.json";
-import ncatCert from "@/assets/certs/ncat.png.asset.json";
-import lpuMeritCert from "@/assets/certs/lpu-merit.png.asset.json";
+import deloitteCert from "@/assets/certs/cert-deloitte.png";
+import oracleAiCert from "@/assets/certs/cert-oracle-ai.png";
+import oracleDataCert from "@/assets/certs/cert-oracle-data.png";
+import powerbiCert from "@/assets/certs/cert-powerbi.png";
+import infosysCert from "@/assets/certs/cert-infosys-dsa.png";
+import ncatCert from "@/assets/certs/cert-ncat.png";
+import lpuMeritCert from "@/assets/certs/cert-lpu-dsa-merit.png";
 import CertificatesSlideshow from "@/components/CertificatesSlideshow";
 import { getAdminData, subscribeToPortfolioData, type AdminData } from "@/lib/adminStore";
 
@@ -80,43 +80,43 @@ const certificates = [
     name: "Data Analytics Job Simulation",
     issuer: "Deloitte · Forage",
     date: "Jun 2026",
-    image: deloitteCert.url,
+    image: deloitteCert,
   },
   {
     name: "Oracle Cloud Infrastructure 2025 – AI Foundations Associate",
     issuer: "Oracle University",
     date: "Mar 2026",
-    image: oracleAiCert.url,
+    image: oracleAiCert,
   },
   {
     name: "Oracle Data Platform 2025 – Foundations Associate",
     issuer: "Oracle University",
     date: "Mar 2026",
-    image: oracleDataCert.url,
+    image: oracleDataCert,
   },
   {
     name: "Power BI Workshop",
     issuer: "OfficeMaster",
     date: "Feb 2026",
-    image: powerbiCert.url,
+    image: powerbiCert,
   },
   {
     name: "Data Structures & Algorithms in Python",
     issuer: "Infosys Springboard",
     date: "Sep 2025",
-    image: infosysCert.url,
+    image: infosysCert,
   },
   {
     name: "AINCAT 2026 – Certificate of Participation",
     issuer: "Naukri Campus",
     date: "Jun 2026",
-    image: ncatCert.url,
+    image: ncatCert,
   },
   {
     name: "Certificate of Merit – Fundamentals of Data Structures",
     issuer: "Centre for Professional Enhancement, LPU",
     date: "Aug 2026",
-    image: lpuMeritCert.url,
+    image: lpuMeritCert,
   },
 ];
 
@@ -360,7 +360,7 @@ const Index = () => {
                 className="group rounded-3xl overflow-hidden border border-border bg-muted"
               >
                 <img
-                  src={lpuMeritCert.url}
+                  src={lpuMeritCert}
                   alt="Certificate of Merit for Fundamentals of Data Structures from Lovely Professional University"
                   loading="lazy"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
