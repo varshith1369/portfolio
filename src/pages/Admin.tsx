@@ -307,9 +307,6 @@ function PinGate({ onUnlock }: { onUnlock: () => void }) {
               >
                 Forgot PIN? Send code to Gmail
               </button>
-              <p className="text-[11px] text-white/30">
-                Default PIN: <span className="font-mono text-white/50">1369</span>
-              </p>
             </div>
           </div>
         )}
