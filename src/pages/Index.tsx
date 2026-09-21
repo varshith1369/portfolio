@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, Mail, Phone, Github, Linkedin, Award, Trophy, GraduationCap, BookOpen, Code2 } from "lucide-react";
+import { ArrowRight, Mail, Phone, Github, Linkedin, Award, Trophy, GraduationCap, BookOpen, Code2, FileText } from "lucide-react";
 import Layout from "@/components/layout/Layout";
 import { useState, useEffect } from "react";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
@@ -224,6 +224,15 @@ const Index = () => {
                 >
                   <Linkedin className="w-4 h-4" />
                   LinkedIn
+                </a>
+                <a
+                  href="/resume.png"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 border border-white/30 text-white font-medium rounded-full hover:bg-white/10 transition-all duration-300 px-7 py-3"
+                >
+                  <FileText className="w-4 h-4" />
+                  Resume
                 </a>
               </div>
             </HeroItem>
