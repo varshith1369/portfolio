@@ -544,6 +544,40 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Resume */}
+      <section id="resume" className="py-24 md:py-32">
+        <div className="container">
+          <FadeUp>
+            <SectionHeader className="text-center mb-14">
+              <p className="text-sm font-medium tracking-[0.2em] uppercase text-muted-foreground mb-2">
+                My Resume
+              </p>
+              <h2 className="text-3xl md:text-4xl tracking-tight font-normal">Curriculum Vitae</h2>
+            </SectionHeader>
+          </FadeUp>
+          <FadeUp>
+            <div className="flex flex-col items-center gap-8">
+              <div className="w-full max-w-2xl rounded-3xl overflow-hidden border border-border shadow-2xl">
+                <img
+                  src="/resume.png"
+                  alt="Yannabathula Varshith Reddy - Resume"
+                  className="w-full h-auto object-contain"
+                />
+              </div>
+              <a
+                href="/resume.png"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-foreground text-background font-medium rounded-full hover:opacity-80 transition-all duration-300 px-8 py-3.5"
+              >
+                <FileText className="w-5 h-5" />
+                View Full Resume
+              </a>
+            </div>
+          </FadeUp>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-24 md:py-32 bg-black text-white">
         <div className="container text-center">
